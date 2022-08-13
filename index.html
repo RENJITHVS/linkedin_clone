@@ -1,0 +1,531 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/logo.png" type="image/x-icon">
+
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
+
+    <!--Google Fonts-->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>LinkedIn </title>
+  </head>
+  <body>
+    
+    <div class="header">
+      <div class="header__left">
+        <img src="assets/logo.png"/>
+        <div class="header__search">
+          <i class="material-icons"> search </i>
+          <input type="text" placeholder=" Search"/>
+        </div>
+      </div>
+
+      <div class="header__right">
+        <div class="headerOption" id="active">
+          <i class="material-icons headerOption__icon"> home </i>
+          <h3>Home</h3>
+        </div>
+        <div class="headerOption">
+          <i class="material-icons headerOption__icon"> supervisor_account </i>
+          <h3>My Network</h3>
+        </div>
+        <div class="headerOption">
+          <i class="material-icons headerOption__icon"> business_center </i>
+          <h3>Jobs</h3>
+        </div>
+        <div class="headerOption">
+          <i class="material-icons headerOption__icon"> chat </i>
+          <h3>Messaging</h3>
+        </div>
+        <div class="headerOption">
+          <i class="material-icons headerOption__icon "> notifications </i>
+          <h3>Notifications</h3>
+        </div>
+        <div class="headerOption">
+          <i class="material-icons headerOption__icon"> account_circle </i>
+          <h3>Me</h3>
+        </div>
+        <div class="headerBorder"></div>
+        <div class="headerOption">
+            <span class="material-icons headerOption__icon dp48"> apps </span>
+            <h3>Work</h3>
+        </div>
+        <div class="headerOption">
+            <a href="#">
+              Try Premium<br> for free
+            </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Body Starts -->
+    <div class="body__main">
+      <!-- Sidebar Starts -->
+      <div class="sidebar">
+        <div class="sidebar__top">
+          <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxMjA3fDB8MXxhbGx8fHx8fHx8fA&ixlib=rb-1.2.1&q=80&w=1080" alt="" class="profile__banner"/>
+          <span><img class="rounded-circle sidebar__topAvatar" src="assets/profile_pic.png"></span> 
+          <h2>Renjith V S</h2>
+          <h4>This is my bio.....</h4>
+        </div>
+
+        <div class="sidebar__stats">
+          <div class="sidebar__stat">
+            <p>Connections</p>
+            <p class="sidebar__statNumber">2,453</p>
+            <p class="sidebar__statbottom">Grow your Network</p>
+          </div>
+          <div class="sidebar__stat">
+            <p><a>Who's viewed your profile</a></p>
+            <p class="sidebar__statNumber">2,650</p>
+          </div>
+          <div class ="border__line"></div>
+          <div class="sidebar__stat">
+            <p>Access exclusive tools & insights</p>
+            <p class="sidebar__statbottom"><i class="material-icons" style="color: #e7a33e">stop</i><a href="#">Try Premium for free</a></p>
+          </div>
+          <div class ="border__line"></div>
+          <div class="bookmark_icon sidebar__stat">
+            <i class="material-icons">bookmark</i><p> My items</p>
+          </div>
+        </div>
+        
+
+        <div class="sidebar__bottom">
+          <p>Recent</p>
+          <div class="sidebar__recentItem">
+            <span class="sidebar__hash"><i class="material-icons">people_alt</i></span>
+            <p>reactjs</p>
+          </div>
+          <div class="sidebar__recentItem">
+            <span class="sidebar__hash"><i class="material-icons">people_alt</i></span>
+            <p>programming</p>
+          </div>
+          <div class="sidebar__recentItem">
+            <span class="sidebar__hash"><i class="material-icons">people_alt</i></span>
+            <p>softwareengineering</p>
+          </div>
+          <div class="sidebar__recentItem">
+            <span class="sidebar__hash"><i class="material-icons">people_alt</i></span>
+            <p>design</p>
+          </div>
+          <div class="sidebar__recentItem">
+            <span class="sidebar__hash"><i class="material-icons">people_alt</i></span>
+            <p>developer</p>
+          </div>
+          <p href="#" class="sidebar__followed">Followed Hashtags</p>
+          <div class="sidebar__recentItem">
+            <span class="sidebar__hash">#</span>
+            <p>covid19</p>
+          </div>
+          <div class="sidebar__recentItem">
+            <span class="sidebar__hash">#</span>
+            <p>python</p>
+          </div>
+          <div class="sidebar__recentItem">
+            <span class="sidebar__hash">#</span>
+            <p>google</p>
+          </div>
+          <div class="sidebar__recentItem">
+            <span class="sidebar__hash">#</span>
+            <p>kaggle</p>
+          </div>
+          <div class="sidebar__recentItem">
+            <span class="sidebar__hash">#</span>
+            <p>webdeveloper</p>
+          </div>
+          <div class ="border__line"></div>
+          <div class="sidebar__discover">
+            <p>Discover More</p>
+          </div>
+        </div>
+      </div>
+      <!-- Sidebar Ends -->
+
+      <!-- Feed Starts -->
+      <div class="feed">
+        <div class="feed__inputContainer">
+          <span><img class="rounded-circle sidebar__topAvatar" src="assets/profile_pic.png"></span>
+          <div class="feed__input"> 
+            <form>
+              <input type="text" placeholder="Start a post"/>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+
+          <div class="feed__inputOptions">
+            <div class="inputOption__feed">
+              <i style="color: #70b5f9" class="material-icons"> insert_photo </i>
+              <h4>Photo</h4>
+            </div>
+            <div class="inputOption__feed">
+              <i style="color: #7fc15e" class="material-icons"> subscriptions </i>
+              <h4>Video</h4>
+            </div>
+            <div class="inputOption__feed">
+              <i style="color: #e7a33e" class="material-icons"> calendar_today </i>
+              <h4>Audio event</h4>
+            </div>
+            <div class="inputOption__feed">
+              <i style="color: #AE0001" class="material-icons"> calendar_view_day </i>
+              <h4>Write Article</h4>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Post Starts -->
+        <div class="post">
+          <div class="post__header">
+             <span><img class="rounded-circle sidebar__topAvatar" src="assets/profile_pic.png"></span> 
+            <div class="post__info">
+              <h2>Python Developers Community (moderated)</h2>
+              <p>name of person • 3rd+</p>
+            </div>
+          </div>
+
+          <div class="post__body">
+            <p>django-cms 3.11.0 is here and loaded with goodies! Big shoutout to everyone involved in this great community effort! Make sure to check it out! </p>
+          </div>
+          <div class="post__reaction">
+            <div class="reaction__right">
+                <i class="material-icons" style="color: #1d90c2;">thumb_up</i>
+                <i class="material-icons" style="color: #d11b46;">favorite</i>
+                <i class="material-icons" style="color: #e8d138;">lightbulb</i>
+                <p class="reaction-name">Mr x and 1234 others</p>
+            </div>
+            <div class="reaction__left">
+              <p>9 comments •</p>
+              <p>3 shares</p>
+            </div>
+          </div>
+          <div class ="border__line_reaction"></div>
+
+          <div class="feed__inputOptions">
+            <div class="inputOption">
+              <i style="color: gray" class="material-icons"> thumb_up </i>
+              <h4>Like</h4>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray" class="material-icons"> comment </i>
+              <h4>Comment</h4>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray" class="material-icons"> share </i>
+              <h4>Share</h4>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray" class="material-icons"> send </i>
+              <h4>Send</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Post Ends -->
+
+        <!-- Post Starts -->
+        <div class="post">
+          <div class="post__header">
+            <span><img class="rounded-circle sidebar__topAvatar" src="assets/profile_pic.png"></span> 
+            <div class="post__info">
+              <h2>Renjith V S</h2>
+              <p>Job Description</p>
+            </div>
+          </div>
+
+          <div class="post__body">
+            <p>django-cms 3.11.0 is here and loaded with goodies! Big shoutout to everyone involved in this great community effort! Make sure to check it out! </p>
+          </div>
+
+          <div class="post__image">
+            <img src="assets/feed1.jpeg">
+          </div>
+
+          <div class="post__reaction">
+            <div class="reaction__right">
+                <i class="material-icons" style="color: #1d90c2;">thumb_up</i>
+                <i class="material-icons" style="color: #d11b46;">favorite</i>
+                <i class="material-icons" style="color: #e8d138;">lightbulb</i>
+                <p class="reaction-name">Mr x and 1234 others</p>
+            </div>
+            <div class="reaction__left">
+              <p>9 comments •</p>
+              <p>3 shares</p>
+            </div>
+          </div>
+          <div class ="border__line_reaction"></div>
+          <div class="feed__inputOptions">
+            
+            <div class="inputOption">
+              <i style="color: gray" class="material-icons"> thumb_up </i>
+              <h4>Like</h4>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray" class="material-icons"> comment </i>
+              <h4>Comment</h4>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray" class="material-icons"> share </i>
+              <h4>Share</h4>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray" class="material-icons"> send </i>
+              <h4>Send</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Post Ends -->
+
+        <!-- Post Starts -->
+        <div class="post">
+          <div class="post__header">
+            <span><img class="rounded-circle sidebar__topAvatar" src="assets/profile_pic.png"></span> 
+            <div class="post__info">
+              <h2>Renjith V S</h2>
+              <p>Job Description</p>
+            </div>
+          </div>
+
+          <div class="post__body">
+            <p>Step by step guide to becoming Python developer</p>
+            <a href="#">#ArtificialIntelligence</a>
+            <a href="#">#AI #ML</a>
+            <a href="#">#DataScience</a>
+          </div>
+          <div class="post__image">
+            <img src="assets/feed2.jpeg">
+          </div>
+
+          <div class="post__reaction">
+            <div class="reaction__right">
+                <i class="material-icons" style="color: #1d90c2;">thumb_up</i>
+                <i class="material-icons" style="color: #d11b46;">favorite</i>
+                <i class="material-icons" style="color: #e8d138;">lightbulb</i>
+                <p class="reaction-name">Mr x and 1234 others</p>
+            </div>
+            <div class="reaction__left">
+              <p>9 comments •</p>
+              <p>3 shares</p>
+            </div>
+          </div>
+          <div class ="border__line_reaction"></div>
+
+          <div class="feed__inputOptions">
+            <div class="inputOption">
+              <i style="color: gray" class="material-icons"> thumb_up </i>
+              <h4>Like</h4>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray" class="material-icons"> comment </i>
+              <h4>Comment</h4>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray" class="material-icons"> share </i>
+              <h4>Share</h4>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray" class="material-icons"> send </i>
+              <h4>Send</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Post Ends -->
+
+        <!-- Post Starts -->
+        <div class="post">
+          <div class="post__header">
+            <span><img class="rounded-circle sidebar__topAvatar" src="assets/profile_pic.png"></span> 
+            <div class="post__info">
+              <h2>Walmart Global Tech</h2>
+              <p>Promoted</p>
+            </div>
+          </div>
+
+          <div class="post__body">
+            <p>Ideas spark progress. Ideas spark change. Ideas spark impact.</p>
+          </div>
+          <div class="post__image">
+            <img src="assets/feed3.jpeg">
+          </div>
+
+          <div class="post__reaction">
+            <div class="reaction__right">
+                <i class="material-icons" style="color: #1d90c2;">thumb_up</i>
+                <i class="material-icons" style="color: #d11b46;">favorite</i>
+                <i class="material-icons" style="color: #e8d138;">lightbulb</i>
+                <p class="reaction-name">Mr x and 1234 others</p>
+            </div>
+            <div class="reaction__left">
+              <p>9 comments •</p>
+              <p>3 shares</p>
+            </div>
+          </div>
+          <div class ="border__line_reaction"></div>
+
+          <div class="feed__inputOptions">
+            <div class="inputOption">
+              <i style="color: gray" class="material-icons"> thumb_up </i>
+              <h4>Like</h4>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray" class="material-icons"> comment </i>
+              <h4>Comment</h4>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray" class="material-icons"> share </i>
+              <h4>Share</h4>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray" class="material-icons"> send </i>
+              <h4>Send</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Post Ends -->
+
+        <!-- Post Starts -->
+        <div class="post">
+          <div class="post__header">
+            <span><img class="rounded-circle sidebar__topAvatar" src="assets/profile_pic.png"></span> 
+            <div class="post__info">
+              <h2>Renjith V S</h2>
+              <p>Job Description</p>
+            </div>
+          </div>
+
+          <div class="post__body">
+            <p>The full step-by-step tutorial on how to deploy Machine Learning models with Django</p>
+            <a href="#">https://lnkd.in/eQtSD29E</a>
+          </div>
+
+          <div class="post__image">
+            <img src="assets/feed4.jpeg">
+          </div>
+
+          <div class="post__reaction">
+            <div class="reaction__right">
+                <i class="material-icons" style="color: #1d90c2;">thumb_up</i>
+                <i class="material-icons" style="color: #d11b46;">favorite</i>
+                <i class="material-icons" style="color: #e8d138;">lightbulb</i>
+                <p class="reaction-name">Mr x and 1234 others</p>
+            </div>
+            <div class="reaction__left">
+              <p>9 comments •</p>
+              <p>3 shares</p>
+            </div>
+          </div>
+          <div class ="border__line_reaction"></div>
+
+          <div class="feed__inputOptions">
+            <div class="inputOption">
+              <i style="color: gray" class="material-icons"> thumb_up </i>
+              <h4>Like</h4>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray" class="material-icons"> comment </i>
+              <h4>Comment</h4>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray" class="material-icons"> share </i>
+              <h4>Share</h4>
+            </div>
+            <div class="inputOption">
+              <i style="color: gray" class="material-icons"> send </i>
+              <h4>Send</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Post Ends -->
+      </div>
+      <!-- Feed Ends -->
+
+      <!-- Widgets Starts -->
+      <div class="widgets">
+        <div class = "widget">
+          <div class="widgets__header">
+            <h2>LinkedIn News</h2>
+            <i class="material-icons"> info </i>
+          </div>
+          <div class="widgets__article">
+            <div class="widgets__articleLeft">
+              <i class="material-icons"> fiber_manual_record </i>
+            </div>
+            <div class="widgets__articleRight">
+              <h4>Big hikes in IT set to fade out</h4>
+              <p>3d ago • 35,993 readers</p>
+            </div>
+          </div>
+  
+          <div class="widgets__article">
+            <div class="widgets__articleLeft">
+              <i class="material-icons"> fiber_manual_record </i>
+            </div>
+            <div class="widgets__articleRight">
+              <h4>What people look for in startups</h4>
+              <p>2h ago • 128 readers</p>
+            </div>
+          </div>
+  
+          <div class="widgets__article">
+            <div class="widgets__articleLeft">
+              <i class="material-icons"> fiber_manual_record </i>
+            </div>
+            <div class="widgets__articleRight">
+              <h4>WhatsApp to allow silent group exit</h4>
+              <p>Top news - 4500 readers</p>
+            </div>
+          </div>
+          <div class="widgets__article">
+            <div class="widgets__showmore">
+              <p>Show More</p><i class="material-icons">keyboard_arrow_down</i>
+            </div>
+          </div>
+        </div>
+
+        <div class="widget adds1">
+          <div class="widgets__header">
+            <h2></h2>
+            <i class="material-icons-round">more_horiz</i>
+          </div>
+          <div class="widget__article_ads">
+            <p class="subtitle__adds">
+              A major capital provider to entrepreneurs in the AI field
+            </p>
+            <div class="images_group__adds">
+              <img src="assets/profile_pic.png">
+              <img src="assets/comp1.jpeg">
+            </div>
+            <p class="title_adds"> You might like to follow <span>SoftBank Group Corp.</span></p>
+            <button> Follow</button>
+
+          </div>
+        </div>
+        <div class="footer__bar adds2">
+          <div class="footer__top">
+            <a>About</a>
+            <a>Accessibility</a>
+            <a>Help Center</a>
+            <a>Privacy & Terms </a>
+            <a>Ad Choices</a>
+            <a>Advertising</a>
+            <a>Business Services</a>
+            <a>Get the LinkedIn app</a>
+            <a>More</a>
+          </div>
+          <div class="footer__bottom">
+            <img src="assets/logo-footer.png">
+            <p>LinkedIn Corporation © 2022</p>
+          </div>
+      </div>
+      
+      
+      <!-- Widgets Ends -->
+    </div>
+    <!-- Main Body Ends -->
+  </body>
+</html>
