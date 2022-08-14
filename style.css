@@ -8,7 +8,6 @@
     font-family: 'Blinker', sans-serif;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
   }
 
@@ -25,7 +24,7 @@
   
   .header__left img {
     object-fit: contain;
-    height: 40px;
+    height: 35px;
   }
   
   .header {
@@ -42,14 +41,15 @@
   
   .header__left {
     display: flex;
-    margin-left: 5rem;
+    margin-left: 70px;
+    padding-top: 2px;
     
   }
  
   .header__right {
     display: flex;
     justify-content: flex-end;
-    margin-right:4rem;
+    margin-right: 20px;
   }
   
   .header__search {
@@ -57,8 +57,8 @@
     display: flex;
     align-items: center;
     border-radius: 5px;
-    margin-left: 0.5rem;
-    height: 20px;
+    margin-left: 5px;
+    height: 16px;
     color: gray;
     background-color: #eef3f8;
     width: 300px;
@@ -80,7 +80,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 20px;
+    padding: 0 15px;
     color: gray;
     cursor: pointer;
   }
@@ -97,7 +97,7 @@
   }
   
   .headerOption h3 {
-    font-size: 1rem;
+    font-size: 14px;
     margin-top: 10px;
     font-weight: 600;
   }
@@ -114,17 +114,17 @@
   /* Main Body */
   .body__main {
     display: flex;
+    flex-direction: row;
     margin-top: 35px;
     width: 90%;
-    
   }
   /* Sidebar */
   .sidebar {
     top: 80px;
-    flex: 0.2;
+    flex: 0 0 auto;
+    width: 20%;
     border-radius: 10px;
     text-align: center;
-    height: fit-content;
   }
   
   .sidebar__top > img {
@@ -180,8 +180,8 @@
     font-weight: 600;
   }
   .sidebar__stat .sidebar__statbottom {
-    color: rgba(1,1,1,0.7);
-    font-size: 15px;
+    color: rgba(1,1,1,0.9);
+    font-size: 13px;
     display: flex;
   }
   .bookmark_icon {
@@ -218,13 +218,13 @@
   
   .sidebar__top > h4 {
     color: gray;
-    font-size: 18px;
+    font-size: 14px;
     margin-top: 5px;
     font-weight: 300;
   }
   
   .sidebar__top > h2 {
-    font-size: 22px;
+    font-size: 15px;
     margin-top: 20px;
   }
   
@@ -291,7 +291,10 @@
   
   /* Feed */
   .feed {
-    flex: 0.5;
+    display:flex;
+    flex: 0 0 auto;
+    width:50%;
+    flex-direction: column;
     margin-left: 20px;
   }
   
@@ -316,7 +319,7 @@
   }
   
   .feed__input {
-    flex: 1 0 80%;
+    flex: 1 0;
     border: 1px solid lightgray;
     border-radius: 30px;
     display: flex;
@@ -349,9 +352,8 @@
   
   .inputOption {
     display: flex;
-    font-size: 18px;
+    font-size: 15px;
     align-items: center;
-    
     color: gray;
     margin:4px;
     padding: 17px 30px;
@@ -359,12 +361,12 @@
   }
   .inputOption__feed {
     display: flex;
-    font-size: 18px;
+    font-size: 15px;
     align-items: center;
     
     color: gray;
-    margin:4px;
-    padding: 10px 20px;
+    margin:4px 4px 0 4px;
+    padding: 10px 10px;
     cursor: pointer;
   }
   
@@ -374,7 +376,7 @@
   }
   .inputOption__feed:hover {
     background-color: rgba(0,0,0,0.1);
-    border-radius: 10px;
+    border-radius: 5px;
   }
   
   .inputOption > h4 {
@@ -419,7 +421,7 @@
   }
 
   .post__body {
-    font-size: 17px;
+    font-size: 15px;
     padding: 14px 15px;
   } 
   .post__body > a {
@@ -430,11 +432,13 @@
   .post__body > a:hover {
     text-decoration: underline;
   }
+  .post__image {
+    object-fit: scale-down;
+    overflow: hidden;
+  }
 
   .post__image > img {
-    max-width: 650px;
-    object-fit: scale-down;
-
+    width: 568px;
   }
   .post__reaction {
     display: flex;
@@ -462,8 +466,9 @@
   /* widgets */
   .widgets {
     top: 80px;
-    flex: 0.3;
     display: flex;
+    flex: 0 0 auto;
+    width: 30%;
     flex-direction: column;
     margin-left: 20px;
     z-index: 100;
@@ -487,7 +492,7 @@
   }
   
   .widgets__header > h2 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
   }
   
@@ -518,11 +523,11 @@
   }
   
   .widgets__articleRight > h4 {
-    font-size: 18px;
+    font-size: 13px;
   }
   
   .widgets__articleRight > p {
-    font-size: 15px;
+    font-size: 12px;
     color: gray;
   }
 
@@ -550,7 +555,7 @@
   .adds2 {
     position: sticky;
     z-index: 1000;
-    top:380;
+    top:370;
   }
 
   .widget__article_ads .subtitle__adds{
@@ -569,7 +574,7 @@
   }
   .widget__article_ads .title_adds{
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
   }
   .widget__article_ads .title_adds > span{
     font-weight: 600;
@@ -581,7 +586,7 @@
     color: #0e5aa5;
     padding: 5px 16px;
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 15px;
     cursor: pointer;
   }
   .widget__article_ads button:hover{
